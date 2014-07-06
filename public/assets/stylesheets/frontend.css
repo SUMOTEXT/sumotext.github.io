@@ -5840,6 +5840,13 @@ select[multiple].input-lg {
 /* background styles */
 .bg {
   background-color: black;
+  min-height: 100%;
+  position: relative;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 /* centered columns styles */
 .row-centered {
