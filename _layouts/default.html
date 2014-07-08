@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<script href="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="./public/assets/stylesheets/application.css">
+		<link rel="stylesheet" type="text/css" href="./public/assets/stylesheets/backend.css">
+		<script src="public/assets/javascript/frontend.js"></script>
+		<script src="public/assets/javascript/backend.js"></script>
+
+
+	</head>
+
+	<body>
+		
+		<div class="container">
+			<!-- .bg master background color -->
+	      	<div class="row-centered bg">
+				
+				<!-- .navbar nav bar area -->
+				{% include navbar.html %}
+	      		
+
+	      		<!-- .content main content area -->
+	        	<div class="col-xs-12 col-centered content"> {{ content }}
+	        	</div>
+	      	</div>
+	    </div>
+
+	</body>
+</html>

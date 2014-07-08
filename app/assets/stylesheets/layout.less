@@ -1,4 +1,7 @@
 @import 'base.less'; 
+
+@background-color: #F4F4F4;
+
 //styles specific for the frontend 
 // ... 
 
@@ -6,11 +9,12 @@
 .content {
   max-width: 960px;
   background-color: white;
+  padding-top: 50px;
 } 
 
 /* background styles */
 .bg {
-  background-color: black;
+  background-color: @background-color;
   min-height:100%;
   position:relative;
 }

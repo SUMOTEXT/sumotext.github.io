@@ -19,10 +19,8 @@ module.exports = function(grunt) {
               compress: false,  //minifying the result
             },
             files: {
-              //compiling frontend.less into frontend.css
-              "./public/assets/stylesheets/frontend.css":"./app/assets/stylesheets/*.less",
-              //compiling backend.less into backend.css
-              "./public/assets/stylesheets/backend.css":"./app/assets/stylesheets/backend.less"
+              //compiling project .less into application.css
+              "./public/assets/stylesheets/application.css":"./app/assets/stylesheets/*.less",
             }
         }
     },
@@ -123,7 +121,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-phpunit');
 
   // Task definition
-  grunt.registerTask('default', ['watch', 'connect']);
+  grunt.registerTask('default', ['less', 'watch', 'connect']);
   grunt.registerTask('js', ['concat', 'connect']);
 
 
