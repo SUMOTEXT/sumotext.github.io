@@ -5833,19 +5833,27 @@ select[multiple].input-lg {
 ...
 */
 /* centered content, max-width of all the main stuff */
-.content {
-  max-width: 960px;
+.main {
+  min-width: 960px;
   background-color: white;
   padding-top: 50px;
   display: table;
+  border-color: #c1c1c1;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-style: solid;
+  border-right-width: 1px;
 }
 .sidebar-wrap {
-  background: red;
+  min-width: 300px;
   display: table-cell;
+  border-color: #4d4d4d;
+  border-left-style: solid;
+  border-left-width: 2px;
 }
 .content-wrap {
-  background: blue;
   display: table-cell;
+  min-width: calc(660px);
 }
 /* background styles */
 .bg {

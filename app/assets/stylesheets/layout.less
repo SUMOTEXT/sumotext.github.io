@@ -1,26 +1,36 @@
 @import 'base.less'; 
 
 @background-color: #F4F4F4;
-
+@main-width: 960px;
+@sidebar-width: 300px;
+@content-width: calc(@main-width - @sidebar-width);
 //styles specific for the frontend 
 // ... 
 
 /* centered content, max-width of all the main stuff */
-.content {
-  max-width: 960px;
+.main {
+  min-width: @main-width;
   background-color: white;
   padding-top: 50px;
   display: table;
+  border-color: darken(@background-color, 20%);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-style: solid;
+  border-right-width: 1px;
 } 
 .sidebar-wrap{
-    background:red;
-    //min-width: 200px;
+    //background:red;
+    min-width: @sidebar-width;
     display: table-cell;
+    border-color: lighten(black, 30%);
+    border-left-style: solid;
+    border-left-width: 2px;
 }
 .content-wrap{
-    background:blue;
+    //background:blue;
     display: table-cell;
-    //width: 100%;
+    min-width: @content-width;
 }
 
 /* background styles */
