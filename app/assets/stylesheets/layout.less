@@ -115,12 +115,13 @@ html, body {
 }
 #sidebar {
     border: 1px solid skyblue;
-    width: 100px;
+    width: @sidebar-width;
     position: absolute;
     left: 0;
     top: 0px;
     bottom: 50px;
 }
 #main {
-    margin-left: 102px
+    margin-left: @sidebar-width;
+    width: calc(960px - @sidebar-width)
 }

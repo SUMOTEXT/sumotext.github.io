@@ -3994,12 +3994,13 @@ body {
 }
 #sidebar {
   border: 1px solid skyblue;
-  width: 100px;
+  width: 300px;
   position: absolute;
   left: 0;
   top: 0px;
   bottom: 50px;
 }
 #main {
-  margin-left: 102px;
+  margin-left: 300px;
+  width: calc(660px);
 }
