@@ -14,16 +14,17 @@
 
 	<body>
 		
-		<div class="container">
+		<div class="container-fluid">
 			<!-- .bg master background color -->
 	      	<div class="row-centered bg">
-				
+				<div class="col-xs-12">
 				<!-- .navbar nav bar area -->
 				{% include navbar.html %}
 	      		
 
 	      		<!-- .content main content area -->
-	        	<div class="col-xs-12 col-centered main"> 
+	      		
+	        	<div class="col-centered main"> 
 					<div class="content-wrap">
 	        			{{ content }}
 	        		</div>
@@ -31,6 +32,7 @@
 						{% include sidebar.html %}
 					</div>
 					
+	        	</div>
 	        	</div>
 	      	</div>
 	    </div>

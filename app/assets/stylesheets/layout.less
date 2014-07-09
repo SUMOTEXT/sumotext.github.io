@@ -6,7 +6,11 @@
 @content-width: calc(@main-width - @sidebar-width);
 //styles specific for the frontend 
 // ... 
-
+html, body{
+    margin:0;
+    padding:0;
+    min-width: 100%; /* this is the important part*/
+}
 /* centered content, max-width of all the main stuff */
 .main {
   min-width: @main-width;
@@ -30,7 +34,11 @@
 .content-wrap{
     //background:blue;
     display: table-cell;
-    min-width: @content-width;
+    max-width: @content-width;
+    @media (max-width: 660px){
+      background-color: blue;
+      max-width: 100%;
+    }
 }
 
 /* background styles */
