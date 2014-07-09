@@ -3906,6 +3906,9 @@ body {
   border-right-style: solid;
   border-right-width: 1px;
 }
+.main-wrapper {
+  padding-top: 50px;
+}
 .sidebar-wrap {
   min-width: 300px;
   display: table-cell;
