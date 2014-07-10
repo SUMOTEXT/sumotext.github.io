@@ -274,3 +274,13 @@ pre.code code {
   display: block;
   padding: 4px;
 }
+#content-secondary {
+  border-left-style: solid;
+  border-left-color: #efeff0;
+  border-left-width: 1px;
+}
+#content-secondary ul {
+  margin-top: 13px;
+  list-style-type: none;
+  text-align: left;
+}

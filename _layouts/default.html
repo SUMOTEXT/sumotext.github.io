@@ -17,25 +17,12 @@
 		<div id="wrap">
 			<div id="skip"></div>
 			<div id="header">
-				<div id="nav">
-					<ul>
-						<li>
-							<a id="logo" href="/">
-								<img src="public/assets/images/newlogo.png" alt="Lamp">
-							</a>
-						</li>
-						<li><a href="/#/rrr">hey</a></li>
-					</ul>
-				</div>
+				{% include navbar.html %}
 			</div>
-			<div id="nav"></div>
+			
 			<div id="content" class="clearfix">
 				<div id="content-secondary">
-					<ul>
-						<li>
-							<a>Getting Started</a>
-						</li>
-					</ul>
+					{% include sidebar.html %}
 				</div>
 				<div id="main">
 					{{content}}
