@@ -1,0 +1,14 @@
+---
+layout: default
+---
+{{ content }}
+
+<div id="post-nav" class="clearfix">
+  {% if page.next.url %} 
+    <a id="prev"  href="{{page.next.url}}">&laquo; {{page.next.title}}</a> 
+  {% endif %} 
+  {% if page.previous.url %} 
+    <a id="next" href="{{page.previous.url}}">{{page.previous.title}} &raquo;</a> 
+  {% endif %} 
+  
+</div>

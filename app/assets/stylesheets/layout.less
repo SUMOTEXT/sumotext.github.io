@@ -1,3 +1,4 @@
+
 body, html { //for master background
 	background: @master-bg;
 }
@@ -11,7 +12,7 @@ body {
   color:#333;
   font:100%/1.4 Arial, Helvetica, sans-serif;
 }
-h1,h2,h3,h4,h5,h6 {
+h1 {
   margin:0 0 .5em;
   color:#444;
   //font:1em/1.2 Georgia,serif
@@ -44,7 +45,54 @@ ul{
 	}
 		#main {
 		  float:left;
-		  width:66%
+		  width:66%;
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        
+        td, th{
+          border: 1px solid #999;
+        }
+        code{
+          padding: 2px 4px;
+          font-size: 90%;
+          color: @code-text-color;
+          background-color: #f9f2f4;
+          border-radius: 4px;
+        }
+
+      }
+
+      p, td {   //everything that gets the main text color
+        font-size: 16px;
+        color: darken(grey, 5%);
+      }
+      table{
+        width: 100%;
+        th{
+          background-color: @master-bg;
+        }
+      }
+
+      #post-nav{
+        margin-top: 30px;
+        a:link {
+          color: @a-link-text;
+        }
+        a:visited {
+          color: @a-link-text;
+        }
+        a:hover,a:focus,a:active {
+          color: @a-hover-text;
+          //background-color: @master-bg;
+        }
+        #prev{
+          float:left;
+        }
+        #next{
+          float:right;
+        }
+      }
 		}
 		#content-secondary {
 		  float:right;

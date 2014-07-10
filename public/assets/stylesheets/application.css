@@ -15,12 +15,7 @@ body {
   color: #333;
   font: 100%/1.4 Arial, Helvetica, sans-serif;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1 {
   margin: 0 0 .5em;
   color: #444;
 }
@@ -52,6 +47,52 @@ ul {
 #main {
   float: left;
   width: 66%;
+}
+#main table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+#main table td,
+#main table th {
+  border: 1px solid #999;
+}
+#main table code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+}
+#main p,
+#main td {
+  font-size: 16px;
+  color: #737373;
+}
+#main table {
+  width: 100%;
+}
+#main table th {
+  background-color: #efeff0;
+}
+#main #post-nav {
+  margin-top: 30px;
+}
+#main #post-nav a:link {
+  color: #2a5db0;
+}
+#main #post-nav a:visited {
+  color: #2a5db0;
+}
+#main #post-nav a:hover,
+#main #post-nav a:focus,
+#main #post-nav a:active {
+  color: #2a5db0;
+}
+#main #post-nav #prev {
+  float: left;
+}
+#main #post-nav #next {
+  float: right;
 }
 #content-secondary {
   float: right;
@@ -186,27 +227,26 @@ a {
   transition: color 0.1s linear, background-color 0.1s linear;
   text-decoration: none;
 }
-#content a:link {
+#main a:link {
   color: #2a5db0;
 }
-#content a:visited {
+#main a:visited {
   color: #8f1f08;
 }
-#content a:hover,
-#content a:focus,
-#content a:active {
-  color: #2a5db0;
+#main a:hover,
+#main a:focus,
+#main a:active {
   background-color: #efeff0;
 }
-#content a.imglink:hover,
-#content a.imglink:focus,
-#content a.imglink:active {
+#main a.imglink:hover,
+#main a.imglink:focus,
+#main a.imglink:active {
   outline: 0;
   background: transparent;
 }
-#content a.imglink:hover img,
-#content a.imglink:focus img,
-#content a.imglink:active img {
+#main a.imglink:hover img,
+#main a.imglink:focus img,
+#main a.imglink:active img {
   border-color: #800000;
   background: #ffffff;
 }
@@ -274,13 +314,30 @@ pre.code code {
   display: block;
   padding: 4px;
 }
-#content-secondary {
-  border-left-style: solid;
-  border-left-color: #efeff0;
-  border-left-width: 1px;
+pre.code code span {
+  color: #c7254e;
+  font-size: 105%;
+  padding: 0 2px;
 }
 #content-secondary ul {
   margin-top: 13px;
   list-style-type: none;
   text-align: left;
+}
+#content-secondary ul li:hover {
+  background-color: #f7f7f8;
+}
+#content-secondary ul li.active {
+  background-color: #efeff0;
+}
+#content-secondary ul a:link {
+  color: #2a5db0;
+}
+#content-secondary ul a:visited {
+  color: #2a5db0;
+}
+#content-secondary ul a:hover,
+#content-secondary ul a:focus,
+#content-secondary ul a:active {
+  color: #2a5db0;
 }

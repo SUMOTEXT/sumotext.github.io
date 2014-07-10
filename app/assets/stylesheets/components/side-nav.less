@@ -1,12 +1,26 @@
 
 
 #content-secondary{
-	border-left-style: solid;
-	border-left-color: @master-bg;
-	border-left-width: 1px;
+	
 	ul{
 		margin-top: 13px;
 		list-style-type: none;
 		text-align: left;
+		li:hover{
+			background-color: mix(@master-bg, white);
+		}
+		li.active{
+			background-color: @master-bg;
+		}
+		a:link {
+			color: @a-link-text;
+		}
+		a:visited {
+			color: @a-link-text;
+		}
+		a:hover,a:focus,a:active {
+		    color: @a-hover-text;
+		    //background-color: @master-bg;
+		}
 	}
 }
