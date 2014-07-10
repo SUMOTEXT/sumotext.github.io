@@ -1,13 +1,32 @@
+@master-bg: #e3e0d1;
+@header-bg: #450200;
+@wrap-bg: #fffff0;
+
+@a-visited-text: black;
+@a-link-text: #8f1f08;
+@a-hover-text: #800000;
+@a-text-deco: '';
+
+//overwrites 
+@wrap-bg: white;
+@header-bg: black;
+@master-bg: rgb(239, 239, 240);
+@a-visited-text: #8f1f08;
+@a-link-text: #2A5DB0;
+@a-hover-text: @a-visited-text;
+@a-text-deco: none;
+
 blockquote,body,caption,div,dl,dt,dd,form,fieldset,h1,h2,h3,h4,h5,h6,html,li,ul,ol,p,pre,textarea,table,td,th {
   margin:0;
   padding:0
 }
 body,html {
-  background:#e3e0d1
+  background: @master-bg;
 }
 body {
   width:62em;
-  min-width:830px;
+  min-width:830px;  //set this to 0 to make content
+                    //be screen width
   max-width:100%;
   margin:0 auto;
   padding:0;
@@ -24,7 +43,7 @@ body {
   -webkit-box-shadow:0 0 16px rgba(0,0,0,0.1);
   -moz-box-shadow:0 0 16px rgba(0,0,0,0.1);
   box-shadow:0 0 16px rgba(0,0,0,0.1);
-  background:#fffff0
+  background: @wrap-bg;
 }
 #content {
   clear:both;
@@ -44,17 +63,18 @@ body {
 a {
   -moz-transition:color .15s linear,background-color .15s linear;
   -webkit-transition:color .15s linear,background-color .15s linear;
-  transition:color .15s linear,background-color .15s linear
+  transition:color .15s linear,background-color .15s linear;
+  text-decoration: @a-text-deco;
 }
 a:link {
-  color:#8f1f08
+  color: @a-link-text;
 }
 a:visited {
-  color:#000
+  color: @a-visited-text;
 }
 a:hover,a:focus,a:active {
-  color:#800000;
-  background-color:#e3e0d1
+  color: @a-hover-text;
+  background-color: @master-bg;
 }
 a.imglink:hover,a.imglink:focus,a.imglink:active {
   outline:0;
@@ -297,7 +317,7 @@ abbr[title],acronym[title] {
 #header {
   min-height:50px;
   overflow:hidden;
-  background:#450200 url(/i/header-bg.jpg) no-repeat
+  background: @header-bg;
 }
 #header h1,#header a {
   float:left;

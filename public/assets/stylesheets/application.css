@@ -28,7 +28,7 @@ th {
 }
 body,
 html {
-  background: #e3e0d1;
+  background: #efeff0;
 }
 body {
   width: 62em;
@@ -49,7 +49,7 @@ body {
   -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
-  background: #fffff0;
+  background: #ffffff;
 }
 #content {
   clear: both;
@@ -70,18 +70,19 @@ a {
   -moz-transition: color 0.15s linear, background-color 0.15s linear;
   -webkit-transition: color 0.15s linear, background-color 0.15s linear;
   transition: color 0.15s linear, background-color 0.15s linear;
+  text-decoration: none;
 }
 a:link {
-  color: #8f1f08;
+  color: #2a5db0;
 }
 a:visited {
-  color: #000000;
+  color: #8f1f08;
 }
 a:hover,
 a:focus,
 a:active {
-  color: #800000;
-  background-color: #e3e0d1;
+  color: #8f1f08;
+  background-color: #efeff0;
 }
 a.imglink:hover,
 a.imglink:focus,
@@ -346,7 +347,7 @@ acronym[title] {
 #header {
   min-height: 50px;
   overflow: hidden;
-  background: #450200 url(/i/header-bg.jpg) no-repeat;
+  background: #000000;
 }
 #header h1,
 #header a {
@@ -1022,4 +1023,3 @@ div.example label {
 ...
 ...
 */
-

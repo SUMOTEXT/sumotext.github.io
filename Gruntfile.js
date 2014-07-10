@@ -20,7 +20,7 @@ module.exports = function(grunt) {
             },
             files: {
               //compiling project .less into application.css
-              "./public/assets/stylesheets/application.css":"./app/assets/stylesheets/*.less",
+              "./public/assets/stylesheets/application.css":"./app/assets/stylesheets/base.less",
             }
         }
     },
