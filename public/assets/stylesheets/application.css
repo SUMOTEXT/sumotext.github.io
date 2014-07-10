@@ -72,27 +72,27 @@ a {
   transition: color 0.1s linear, background-color 0.1s linear;
   text-decoration: none;
 }
-a:link {
+#content a:link {
   color: #2a5db0;
 }
-a:visited {
+#content a:visited {
   color: #8f1f08;
 }
-a:hover,
-a:focus,
-a:active {
+#content a:hover,
+#content a:focus,
+#content a:active {
   color: #2a5db0;
   background-color: #efeff0;
 }
-a.imglink:hover,
-a.imglink:focus,
-a.imglink:active {
+#content a.imglink:hover,
+#content a.imglink:focus,
+#content a.imglink:active {
   outline: 0;
   background: transparent;
 }
-a.imglink:hover img,
-a.imglink:focus img,
-a.imglink:active img {
+#content a.imglink:hover img,
+#content a.imglink:focus img,
+#content a.imglink:active img {
   border-color: #800000;
   background: #ffffff;
 }
@@ -182,7 +182,7 @@ li {
 .code {
   overflow: auto;
   padding: 0;
-  border: 1px solid #e3e0d1;
+  border: 1px solid #efeff0;
   list-style: none;
 }
 .code li {
@@ -295,7 +295,7 @@ pre {
   font-family: monospace;
 }
 pre.code {
-  background: #f3f3e6;
+  background: #efeff0;
 }
 pre.code code {
   display: block;
@@ -348,6 +348,7 @@ acronym[title] {
   min-height: 50px;
   overflow: hidden;
   background: #000000;
+  padding-left: 16px;
 }
 #header h1,
 #header a {
@@ -1023,10 +1024,10 @@ div.example label {
 ...
 ...
 */
-#side-logo-center img {
-  width: 33px;
+a#logo {
+  height: 50px;
+}
+a#logo img {
+  margin-top: calc(10px);
   height: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -20px;
 }

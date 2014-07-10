@@ -9,6 +9,9 @@
 
 @link-bg-transition-time: .10s;
 @content-secondary-width: 33%;
+@content-padding: 16px;
+
+@header-min-height: 50px;
 
 //overwrites 
 @wrap-bg: white;
@@ -50,7 +53,7 @@ body {
 }
 #content {
   clear:both;
-  padding:24px 16px
+  padding:24px @content-padding;
 }
 #main {
   float:left;
@@ -69,23 +72,25 @@ a {
   transition:color @link-bg-transition-time linear,background-color @link-bg-transition-time linear;
   text-decoration: @a-text-deco;
 }
-a:link {
-  color: @a-link-text;
-}
-a:visited {
-  color: @a-visited-text;
-}
-a:hover,a:focus,a:active {
-  color: @a-hover-text;
-  background-color: @master-bg;
-}
-a.imglink:hover,a.imglink:focus,a.imglink:active {
-  outline:0;
-  background:transparent
-}
-a.imglink:hover img,a.imglink:focus img,a.imglink:active img {
-  border-color:#800000;
-  background:#fff
+#content {
+  a:link {
+    color: @a-link-text;
+  }
+  a:visited {
+    color: @a-visited-text;
+  }
+  a:hover,a:focus,a:active {
+    color: @a-hover-text;
+    background-color: @master-bg;
+  }
+  a.imglink:hover,a.imglink:focus,a.imglink:active {
+    outline:0;
+    background:transparent
+  }
+  a.imglink:hover img,a.imglink:focus img,a.imglink:active img {
+    border-color:#800000;
+    background:#fff
+  }
 }
 #skip {
   margin:0 12px 5px;
@@ -162,7 +167,7 @@ li {
 .code {
   overflow:auto;
   padding:0;
-  border:1px solid #e3e0d1;
+  border:1px solid @master-bg;
   list-style:none
 }
 .code li {
@@ -272,7 +277,7 @@ code,kbd,pre {
   font-family:monospace
 }
 pre.code {
-  background:#f3f3e6
+  background: @master-bg
 }
 pre.code code {
   display:block;
@@ -318,9 +323,10 @@ abbr[title],acronym[title] {
   display:block
 }
 #header {
-  min-height:50px;
+  min-height: @header-min-height;
   overflow:hidden;
   background: @header-bg;
+  padding-left: @content-padding;
 }
 #header h1,#header a {
   float:left;
