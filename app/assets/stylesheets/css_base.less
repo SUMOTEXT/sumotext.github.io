@@ -7,13 +7,16 @@
 @a-hover-text: #800000;
 @a-text-deco: '';
 
+@link-bg-transition-time: .10s;
+@content-secondary-width: 33%;
+
 //overwrites 
 @wrap-bg: white;
 @header-bg: black;
 @master-bg: rgb(239, 239, 240);
 @a-visited-text: #8f1f08;
 @a-link-text: #2A5DB0;
-@a-hover-text: @a-visited-text;
+@a-hover-text: @a-link-text;
 @a-text-deco: none;
 
 blockquote,body,caption,div,dl,dt,dd,form,fieldset,h1,h2,h3,h4,h5,h6,html,li,ul,ol,p,pre,textarea,table,td,th {
@@ -54,16 +57,16 @@ body {
   width:66%
 }
 #content-secondary {
-  float:right;
-  width:260px
+  float:left;
+  width:@content-secondary-width;
 }
 #footer {
   clear:both
 }
 a {
-  -moz-transition:color .15s linear,background-color .15s linear;
-  -webkit-transition:color .15s linear,background-color .15s linear;
-  transition:color .15s linear,background-color .15s linear;
+  -moz-transition:color @link-bg-transition-time linear,background-color @link-bg-transition-time linear;
+  -webkit-transition:color @link-bg-transition-time linear,background-color @link-bg-transition-time linear;
+  transition:color @link-bg-transition-time linear,background-color @link-bg-transition-time linear;
   text-decoration: @a-text-deco;
 }
 a:link {
