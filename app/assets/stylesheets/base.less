@@ -1,6 +1,28 @@
+@master-bg: #e3e0d1;
+@header-bg: #450200;
+@wrap-bg: #fffff0;
 
+@a-visited-text: black;
+@a-link-text: #8f1f08;
+@a-hover-text: #800000;
+@a-text-deco: '';
 
-@import "css_base.less";
+@link-bg-transition-time: .10s;
+@content-secondary-width: 33%;
+@content-padding: 16px;
+
+@header-min-height: 50px;
+
+//overwrites 
+@wrap-bg: white;
+@header-bg: black;
+@master-bg: rgb(239, 239, 240);
+@a-visited-text: #8f1f08;
+@a-link-text: #2A5DB0;
+@a-hover-text: @a-link-text;
+@a-text-deco: none;
+
+//@import "css_base.less";
 /*
 ...
 ...
@@ -9,11 +31,7 @@
 @logo-height: @header-min-height;
 @logo-img-height: 30px;
 
-a#logo {
-	height: @logo-height;
-	
-	img{
-		margin-top: calc((@logo-height - @logo-img-height) / 2);
-		height: @logo-img-height;
-	}
-}
+@import 'layout';
+@import 'components/links';
+@import 'components/navs';
+@import 'components/code';

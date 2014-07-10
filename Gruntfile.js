@@ -92,7 +92,7 @@ module.exports = function(grunt) {
           }
         },
         less: {
-          files: ['./app/assets/stylesheets/*.less'],  //watched files
+          files: ['./app/assets/stylesheets/**/*.less'],  //watched files
           tasks: ['less'],                          //tasks to run
           options: {
             livereload: true                        //reloads the browser
