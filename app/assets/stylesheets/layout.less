@@ -62,8 +62,18 @@ ul{
         }
 
       }
+      li {
+        code{
+          padding: 2px 4px;
+          font-size: 90%;
+          color: @code-text-color;
+          background-color: #f9f2f4;
+          border-radius: 4px;
+        }
+      }
 
-      p, td {   //everything that gets the main text color
+
+      p, td, li {   //everything that gets the main text color
         font-size: 16px;
         color: darken(grey, 5%);
       }

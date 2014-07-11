@@ -1,9 +1,9 @@
 <ul>
+	<li><a href="/">Getting Started</a></li>
 	{% for pag in site.categories.docs %}
           <li {% if page.url == pag.url %} class="active"{% endif %} >
             <a href="{{pag.url}}">{{pag.title}}</a>
           </li>
     {% endfor %}
-    <li><a href="#/33333">asf</a></li>
 
 </ul>

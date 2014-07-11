@@ -44,7 +44,7 @@ Content-Type: text/html; charset=utf-8
 The response data comes as a string delimited by a ':' (colon). 
 <pre class="code"><code>{mobile}:{smsid}</code></pre>
 
-Param | Description
+Field | Description
 --- | --- 
 `mobile` | Mobile number you sent MT to
 `smsid` | Unique ID for the SMS
