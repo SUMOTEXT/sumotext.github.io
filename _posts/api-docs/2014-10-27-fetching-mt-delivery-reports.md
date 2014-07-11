@@ -9,41 +9,51 @@ weight: 5
 
 Fetching MT Delivery Reports
 ========
-> Check the status of a sent SMS.
 
 You may receive a delivery report for an MT that was sent through the Sumotext API. This report indicates if the message corresponding to `smsid` was successfully delivered, and if it wasn't, gives a reason why.
 
-### HTTP Method - `GET`
+### URL
+<pre class="code"><code>https://mosms.sumotext.com/secure/sumoReport.aspx?</code></pre>
 
-### Example URL
-```
-https://mosms.sumotext.com/secure/sumoReport.aspx?smsid={smsid}&shortcode=74700
-```
-
-#### Request Parameters
+### Request Parameters
 Param | Description
 --- | --- 
 `smsid` | Unique smsid returned when sending the MT.
 `shortcode` | Short code used.
 
-#### Response Type - `string`
-#### Response Format - `{smsid}:{sent-status}:{true/false message}`
-where `sent-status` is either `TRUE` or `FALSE`, and the `true/false message` corresponds to one of the messages listed below.
+### Sample Request
+<pre class="code"><code>GET /secure/sumoReport.aspx?<span>smsid</span>=ACAEEBE7-DFC3-4837-8E49-AAEB04D6E9E0&<span>shortcode</span>=74700 HTTP/1.0
+Host: mosms.sumotext.com
+</code></pre>
 
+### Response Fields
+The response data comes as a string delimited by a ':' (colon). 
+<pre class="code"><code>{smsid}:{sent-status}:{true/false message}</code></pre>
 
-#### Error Responses
-Response | Description
+Field | Description
 --- | --- 
-`{smsid}:TRUE:[True Message]` | Message successfully sent.
-`{smsid}:FALSE:[False Message]` | Message failed to deliver. See "Not Sent Messages" for list of error messages.
-`{smsid}:NOTFOUND:[single space char]` | The smsid is not in the system.
+`smsid` | Unique ID for the SMS
+`sent-status` | TRUE if sent, FALSE otherwise
+`true/false message` | Message describing the sent status
 
-#####True Messages
+The first line of the response contains this string. You may ignore the lines that follow (they contain the html markup that would call this method from a browser).
+
+### Error Response
+
+If your message didn't send, your response will come in the form
+<pre class="code"><code>{smsid}:FALSE:{false message}</code></pre>
+
+If the smsid is not found, your response will be
+<pre class="code"><code>{smsid}:NOTFOUND:[single space char]</code></pre>
+
+NOTE: There is a single space character after the second colon. 
+
+####True Messages
 * Sent by Sumotext to Aggregator.
 * Message successfully delivered to handset.
 * Message successfully sent to carrier.
 
-#####False Messages
+####False Messages
 * Failed. We are unable to delier this message.
 * Not Delivered, Billing failed, Billing.
 * Not Delivered, Invalid destination, Destination permanent.

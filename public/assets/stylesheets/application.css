@@ -63,8 +63,16 @@ ul {
   background-color: #f9f2f4;
   border-radius: 4px;
 }
+#main li code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+}
 #main p,
-#main td {
+#main td,
+#main li {
   font-size: 16px;
   color: #737373;
 }
@@ -307,17 +315,17 @@ a#logo img {
   border: 1px solid #efeff0;
   list-style: none;
 }
-pre.code {
+.code {
   background: #efeff0;
+}
+.code span {
+  color: #c7254e;
+  font-size: 105%;
+  padding: 0 2px;
 }
 pre.code code {
   display: block;
   padding: 4px;
-}
-pre.code code span {
-  color: #c7254e;
-  font-size: 105%;
-  padding: 0 2px;
 }
 #content-secondary ul {
   margin-top: 13px;

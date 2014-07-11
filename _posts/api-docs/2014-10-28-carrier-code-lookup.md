@@ -39,7 +39,7 @@ ATTUS
 The response data comes as a string. 
 <pre class="code"><code>{carrier_code}</code></pre>
 
-Param | Description
+Field | Description
 --- | --- 
 `carrier_code` | Mobile number you sent MT to
 
