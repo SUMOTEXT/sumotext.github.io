@@ -19,7 +19,7 @@ There is a $0.005 charge to look up a mobile number's carrier code. View [Append
 ### Request Parameters
 Param | Description
 --- | --- 
-`mobile` | Number to send MT to. 
+`mobile` | Number to look up carrier for.
 `shortcode` | Short code used.
 
 ### Sample Request
@@ -41,7 +41,9 @@ The response data comes as a string.
 
 Field | Description
 --- | --- 
-`carrier_code` | Mobile number you sent MT to
+`carrier_code` | Carrier code corresponding to the user's cellular carrier.
+
+See [appendix a](https://github.com/SUMOTEXT/Sumotext-API-Guide/blob/master/api-docs/appendices/appendix-a.md) for a list of carrier codes.
 
 The first line of the response contains this string. You may ignore the lines that follow (they contain the html markup that would call this method from a browser).
 
