@@ -61,5 +61,5 @@ The first line of the response contains this string. You may ignore the lines th
 If there is an error, the second piece of data contains an error message instead:
 <pre class="code"><code>{mobile}:{error-message}</code></pre>
 
-If the IP adress making the API call not registered with Sumotext, the response is 
+If the IP adress making the API call is not registered with Sumotext, the response is 
 <pre class="code"><code>NOTIP</code></pre>
