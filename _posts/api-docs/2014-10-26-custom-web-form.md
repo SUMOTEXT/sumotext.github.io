@@ -9,7 +9,6 @@ data: custom-form
 
 Custom Web Form
 ========
-> Initiate an opt-in from your own web form.
 
 When a SUMOTEXT client wants to initiate an opt-in (and collect profile data) from the client's own web form, they will post an HTTPGET request (in an HTML form) to the following URL with ALL 15 query string parameters. 
 

@@ -1,0 +1,37 @@
+#main {
+  // "master" text color, applies to elements
+  // that will contain text (excluding "")
+  h1 {
+    margin:0 0 .5em;
+    color:#444;
+    //font:1em/1.2 Georgia,serif
+  }
+  p, td, li {   //everything that gets the main text color
+    font-size: 1em;
+    color: black;
+    code{
+      padding: 0 3px;
+      font-size: 110%;
+    }
+  }
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    td, th {
+      border: 1px solid #999;
+    }
+    th {
+      background-color: @master-bg;
+    }
+    
+  }
+
+  
+
+  
+
+
+
+}

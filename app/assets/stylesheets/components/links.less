@@ -3,7 +3,7 @@ a {
   -moz-transition:color @link-bg-transition-time linear,background-color @link-bg-transition-time linear;
   -webkit-transition:color @link-bg-transition-time linear,background-color @link-bg-transition-time linear;
   transition:color @link-bg-transition-time linear,background-color @link-bg-transition-time linear;
-  text-decoration: @a-text-deco;
+  //text-decoration: @a-text-deco;
 }
 
 //content links
@@ -12,11 +12,12 @@ a {
     color: @a-link-text;
   }
   a:visited {
-    color: @a-visited-text;
+    color: @a-link-text;
   }
   a:hover,a:focus,a:active {
     //color: @a-hover-text;
     background-color: @master-bg;
+    text-decoration: none;
   }
   a.imglink:hover,a.imglink:focus,a.imglink:active {
     outline:0;

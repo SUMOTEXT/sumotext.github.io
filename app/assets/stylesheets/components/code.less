@@ -1,23 +1,27 @@
-.code {
+code {
+  padding: 2px 4px;
+  color: @code-text-color;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+}
+
+pre.code {
   overflow:auto;
   padding:0;
   border:1px solid @master-bg;
-  list-style:none
-}
-.code {
+  list-style:none;
   background: @master-bg;
+  font-size: 1em;
+  padding: 6px 3px;
   span {
     color: @code-text-color;
     font-size: 105%;
     padding: 0 2px;
   }
-}
-pre.code code {
-  display:block;
-  padding:4px;
-  
-}
-
-code {
-
+  code {
+    color: black;
+    background-color: inherit;
+    border-radius: 0px;
+    padding: 0px;
+  }
 }

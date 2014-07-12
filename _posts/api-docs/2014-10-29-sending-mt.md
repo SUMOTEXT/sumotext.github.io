@@ -9,7 +9,7 @@ weight: 3
 
 #Sending a Mobile Terminated (MT) Message
 
-In order to use the SUMOTEXT API to send an MT, your server‘s IP Address must be registered in the SUMOTEXT API Database and tied to a specific account and dedicated short code.
+In order to use the SUMOTEXT API to send an MT, your server's IP Address must be registered in the SUMOTEXT API Database and tied to a specific account and dedicated short code.
 All clients can send messages from inside our online campaign management tools.
 However, if you have a dedicated short code, you are free to send messages from your own internal system via this API.
 
@@ -47,7 +47,7 @@ The response data comes as a string delimited by a ':' (colon).
 Field | Description
 --- | --- 
 `mobile` | Mobile number you sent MT to
-`smsid` | Unique ID for the SMS
+`smsid` | Unique ID for the SMS (used to [lookup delivery report]({% post_url api-docs/2014-10-27-fetching-mt-delivery-reports %}))
 
 The first line of the response contains this string. You may ignore the lines that follow (they contain the html markup that would call this method from a browser).
 
