@@ -25,7 +25,7 @@ Sumotext can be cinfigured to automatically post to a web service when these eve
 ###Receiving Post Data (API Callbacks)
 The Sumotext platform can be configured to send your web server an HTTP request when these events are triggered. Follow the directions below to tell Sumotext where to point the HTTP calls:
 
-1. Log in at [sumotext.com](sumotext.com).
+1. Log in at [sumotext.com](http://www.sumotext.com).
 2. Go to the Settings tab.
 3. Go to the Web Form settings tab.
 4. Click "Edit Post CRM".

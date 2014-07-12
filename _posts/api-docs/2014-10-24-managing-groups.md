@@ -53,13 +53,3 @@ The response data comes as a string
 ###Error Response
 If there is an error, the response contains an error description message after a colon.
 <pre class="code"><code>Action {action} Error: [Error Description]</code></pre>
-
-
-The first line of the response contains this string. You may ignore the lines that follow (they contain the html markup that would call this method from a browser).
-
-###Error Response
-If there is an error, the second piece of data contains an error message instead:
-<pre class="code"><code>{mobile}:{error-message}</code></pre>
-
-If the IP adress making the API call is not registered with Sumotext, the response is 
-<pre class="code"><code>NOTIP</code></pre>
