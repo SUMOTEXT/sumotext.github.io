@@ -41,6 +41,10 @@
 @import 'components/code';
 @import 'components/side-nav';
 
+#menu-button{
+   visibility: hidden;
+   display: none;
+}
 @media (max-width: 480px){
    #header {
       position: fixed;
@@ -49,6 +53,8 @@
       padding: 0;
 
       #menu-button {
+         visibility: visible;
+         display: block;
          margin-top: 12px;
          margin-right: 10px;
          width: 30px;
@@ -70,7 +76,7 @@
 }
 
 #menuOverlay {
-   position:absolute; /*or  absolute*/
+   position:fixed; /*or  absolute*/
    top:0;
    left:0;
    width: 100%;
@@ -78,8 +84,8 @@
    background:rgba(112, 112, 112, .9);
    z-index: 999; /* or  greater value */
    text-align: center;
-   display: none;
-   visibility: hidden;
+   //display: none;
+   //visibility: hidden;
    p{
    	width: 100px;
    	text-align: center;

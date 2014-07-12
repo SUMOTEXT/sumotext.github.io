@@ -1,0 +1,10 @@
+<div id="menuOverlay">
+	<ul>
+		{% for pag in site.categories.docs %}
+	      <li {% if page.url == pag.url %} class="active"{% endif %} >
+	        <a href="{{pag.url}}">{{pag.title}}</a>
+	      </li>
+		{% endfor %}
+	</ul>
+
+</div>

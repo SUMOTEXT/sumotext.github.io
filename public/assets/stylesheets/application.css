@@ -374,6 +374,10 @@ pre.code code {
 #content-secondary ul a:active {
   color: #2a5db0;
 }
+#menu-button {
+  visibility: hidden;
+  display: none;
+}
 @media (max-width: 480px) {
   #header {
     position: fixed;
@@ -382,6 +386,8 @@ pre.code code {
     padding: 0;
   }
   #header #menu-button {
+    visibility: visible;
+    display: block;
     margin-top: 12px;
     margin-right: 10px;
     width: 30px;
@@ -401,7 +407,7 @@ pre.code code {
   }
 }
 #menuOverlay {
-  position: absolute;
+  position: fixed;
   /*or  absolute*/
   top: 0;
   left: 0;
@@ -411,8 +417,6 @@ pre.code code {
   z-index: 999;
   /* or  greater value */
   text-align: center;
-  display: none;
-  visibility: hidden;
 }
 #menuOverlay p {
   width: 100px;
