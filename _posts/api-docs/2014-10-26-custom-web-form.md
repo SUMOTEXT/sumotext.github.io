@@ -48,5 +48,3 @@ The following HTML form will properly form the GET querystring for submitting an
 To show what the HTTP request looks like:
 <pre class="code"><code>GET /mOptinMO.aspx?<span>country</span>=USA&<span>shortcode</span>=69872&<span>key</span>=SUMO&<span>phone</span>=5012474110&<span>txt1</span>=custom+data&<span>txt2</span>=&<span>txt3</span>=&<span>txt4</span>=&<span>txt5</span>=&<span>txt6</span>=&<span>txt7</span>=&<span>txt8</span>=<span>txt9</span>=&<span>txt10</span>=&<span>txt11</span>= HTTP/1.0
 Host: mosms.sumotext.com</code></pre>
-
-### 
