@@ -3,8 +3,6 @@ layout: page
 title:  "Custom Web Form"
 categories: docs
 permalink: /custom-web-form/
-weight: 6
-data: custom-form
 ---
 
 Custom Web Form

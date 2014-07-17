@@ -3,8 +3,6 @@ layout: page
 title:  "CRM API Callback"
 categories: docs
 permalink: /receiving-post-data/
-weight: 7
-data: receive-post
 ---
 
 CRM API Callback

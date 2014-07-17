@@ -3,8 +3,6 @@ layout: page
 title:  "Fetching MT Delivery Reports"
 categories: docs
 permalink: /fetching-mt-delivery-report/
-data: fetch-mt
-weight: 5
 ---
 
 Fetching MT Delivery Reports

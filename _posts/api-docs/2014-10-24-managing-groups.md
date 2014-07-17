@@ -3,8 +3,6 @@ layout: page
 title:  "Managing Groups"
 categories: docs
 permalink: /managing-groups/
-data: managing-groups
-weight: 8
 ---
 
 Managing Groups

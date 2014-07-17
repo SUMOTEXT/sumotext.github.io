@@ -3,8 +3,6 @@ layout: page
 title:  "Carrier Code Lookup"
 categories: docs
 permalink: /carrier-code-lookup/
-weight: 4
-data: carrier-code
 ---
 
 Carrier Code Lookup
