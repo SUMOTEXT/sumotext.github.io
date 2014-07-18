@@ -20,8 +20,7 @@ Param | Description
 `shortcode` | Short code used.
 
 ### Sample Request
-<pre class="code"><code>GET /secure/sumoReport.aspx?<span>smsid</span>=ACAEEBE7-DFC3-4837-8E49-AAEB04D6E9E0&<span>shortcode</span>=74700 HTTP/1.0
-Host: mosms.sumotext.com
+<pre class="code"><code>https://mosms.sumotext.com/secure/sumoReport.aspx?smsid=ACAEEBE7-DFC3-4837-8E49-AAEB04D6E9E0&shortcode=74700
 </code></pre>
 
 ### Response Fields

@@ -3,6 +3,8 @@ layout: page
 title:  "Custom Web Form"
 categories: docs
 permalink: /custom-web-form/
+weight: 6
+data: custom-form
 ---
 
 Custom Web Form
@@ -44,5 +46,4 @@ The following HTML form will properly form the GET querystring for submitting an
 
 ### Sample HTTP Call
 To show what the HTTP request looks like:
-<pre class="code"><code>GET /mOptinMO.aspx?<span>country</span>=USA&<span>shortcode</span>=69872&<span>key</span>=SUMO&<span>phone</span>=5012474110&<span>txt1</span>=custom+data&<span>txt2</span>=&<span>txt3</span>=&<span>txt4</span>=&<span>txt5</span>=&<span>txt6</span>=&<span>txt7</span>=&<span>txt8</span>=<span>txt9</span>=&<span>txt10</span>=&<span>txt11</span>= HTTP/1.0
-Host: mosms.sumotext.com</code></pre>
+<pre class="code"><code>http://mosms.sumotext.com/mOptinMO.aspx?country=USA&shortcode=69872&key=SUMO&phone=5012474110&txt1=??&txt2=??&txt3=??&txt4=??&txt5=??&txt6=??&txt7=??&txt8=??txt9=??&txt10=??&txt11=??</code></pre>

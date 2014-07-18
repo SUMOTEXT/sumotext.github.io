@@ -29,16 +29,10 @@ Param | Description
 
 ### Sample Request
 
-<pre class="code"><code>GET /secure/sumoSend.aspx?<span >mobile</span>=5015551234&&<span>carrier</span>=ATTUS&<span>shortcode</span>=74700&<span>key</span>=SUMO&<span>msg</span>=hello HTTP/1.0
-Host: mosms.sumotext.com
-</code></pre>
+<pre class="code"><code>https://mosms.sumotext.com/secure/sumoSend.aspx?mobile=5015551234&carrier=ATTUS&shortcode=74700&key=SUMO&msg=hello</code></pre>
 
 ### Sample Response
-<pre class="code"><code>HTTP/1.1 200 OK
-Content-Type: text/html; charset=utf-8
-
-2125551212:ACAEEBE7-DFC3-4837-8E49-AAEB04D6E9E0
-</code></pre>
+<pre class="code"><code>2125551212:ACAEEBE7-DFC3-4837-8E49-AAEB04D6E9E0</code></pre>
 
 ### Response Fields
 The response data comes as a string delimited by a ':' (colon). 

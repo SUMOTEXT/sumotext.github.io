@@ -32,16 +32,12 @@ Params | Description
 
 ### Sample Request
 
-<pre class="code"><code>GET /secure/sumoGroup.aspx?<span>country</span>=USA&<span>shortcode</span>=74700&<span>key</span>=SOMEKEY&<span>group</span>=group1&<span>action</span>=addmember&<span>mobile</span>=5015551234 HTTP/1.0
-Host: mosms.sumotext.com
+<pre class="code"><code>http://mosms.sumotext.com/secure/sumoGroup.aspx?country=USA&shortcode=74700&key=SUMOKEY&group=yourgroup&action=addmember&mobile=5015551234
 </code></pre>
 
 
 ### Sample Response
-<pre class="code"><code>HTTP/1.1 200 OK
-Content-Type: text/html; charset=utf-8
-
-Action Addmember OK
+<pre class="code"><code>Action Addmember OK
 </code></pre>
 
 ### Response Fields

@@ -22,15 +22,10 @@ Param | Description
 
 ### Sample Request
 
-<pre class="code"><code>GET /secure/sumoLookup.aspx?<span>mobile</span>=5015551234&<span>shortcode</span>=74700 HTTP/1.0
-Host: mosms.sumotext.com
-</code></pre>
+<pre class="code"><code>http://mosms.sumotext.com/secure/sumoLookup.aspx?mobile=5015551234&shortcode=74700</code></pre>
 
 ### Sample Response
-<pre class="code"><code>HTTP/1.1 200 OK
-Content-Type: text/html; charset=utf-8
-
-ATTUS
+<pre class="code"><code>ATTUS
 </code></pre>
 
 ### Response Fields
