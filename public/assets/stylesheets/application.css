@@ -424,6 +424,7 @@ pre.code code {
   z-index: 999;
   /* or  greater value */
   text-align: center;
+  display: none;
 }
 #menuOverlay p {
   width: 100px;

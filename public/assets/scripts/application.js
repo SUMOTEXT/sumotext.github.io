@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    $('#menuOverlay').toggle();
+    //$('#menuOverlay').toggle();
 
     $('#menu-wrap').on('click', function(){
     	//alert('asdf');
