@@ -1,51 +1,74 @@
 ---
 layout: page
-title:  "Carrier Code Lookup"
+title:  "Carrier Lookup"
 categories: docs
 permalink: /carrier-code-lookup/
 ---
 
-Carrier Code Lookup
+Carrier Lookup
 ======
 
-There is a $0.005 charge to look up a mobile number's carrier code. View [Appendix A](https://github.com/SUMOTEXT/Sumotext-API-Guide/blob/master/api-docs/appendices/appendix-a.md) for a list of all carrier codes.
+#### URL
+    https://api.sumotext.com/api/sumolookup/lookup
 
-### URL
-<pre class="code"><code>http://mosms.sumotext.com/secure/sumoLookup.aspx?</code></pre>
-### HTTP Method - `GET`
+#### Parameters
 
-### Request Parameters
-Param | Description
---- | --- 
-`mobile` | Number to look up carrier for.
-`shortcode` | Short code used.
+Parameter | Description
+---- | ----
+apikey | Your api key.
+mobile | The mobile number you are trying to lookup carrier for.
 
-### Sample Request
+#### Post Body and Querystring examples
 
-<pre class="code"><code>http://mosms.sumotext.com/secure/sumoLookup.aspx?mobile=5015551234&shortcode=74700</code></pre>
+**json**
 
-### Sample Response
-<pre class="code"><code>ATTUS
-</code></pre>
+    {
+        "apikey":"[apikey]",
+        "mobile":"[mobile]"
+    }
 
-### Response Fields
-The response data comes as a string. 
-<pre class="code"><code>{carrier_code}</code></pre>
+**xml**
 
-Field | Description
---- | --- 
-`carrier_code` | Carrier code corresponding to the user's cellular carrier.
+    <?xml version="1.0"?>
+    <smoLookupParser>
+        <apikey>[apikey]</apikey>
+        <mobile>[mobile]</mobile>
+    </smoLookupParser>
 
-See [appendix a](https://github.com/SUMOTEXT/Sumotext-API-Guide/blob/master/api-docs/appendices/appendix-a.md) for a list of carrier codes.
+**querystring**
 
-The first line of the response contains this string. You may ignore the lines that follow (they contain the html markup that would call this method from a browser).
+    ?apikey=[apikey]&mobile=[mobile]
 
-###Error Response
-If there is an error, the response will be a string containing an error message.
-<pre class="code"><code>{error_message}</code></pre>
+#### Http POST return
 
-###Error Messages
-Message | Description
---- | --- 
-`IP NOT REGISTERED` | IP address not registered.
-`ERROR CARRIER NOT FOUND FOR: {mobile}` | The carrier information for this number could not be found.
+Carrier Lookup POST will return the Mobile Number, the Carrier, and an Error Object.
+
+**json**
+
+    {
+        "MobileNumber":"4807345077",
+        "Carrier":"VERIZONUS",
+        "Err": {
+            "ErrNum":0,
+            "ErrMessage":""
+        }
+    }
+
+**xml**
+
+    <smoLookup.smoLookupRetrun xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/SumotextApi">
+    <MobileNumber>4807345077</MobileNumber>
+        <Carrier>VERIZONUS</Carrier>
+        <Err>
+            <ErrMessage></ErrMessage>
+            <ErrNum>ErrNoErr</ErrNum>
+        </Err>
+    </smoLookup.smoLookupRetrun>
+
+The Error object will report No Error when a post is successful. The following Errors are currently coded for, others may be added.
+
+ErrNum | ErrMessage
+---- | ----
+624 | The current Api Key [apikey] does not have permission to Lookup Carrier Information
+256 | The current Api Key [apikey] does not exist
+
