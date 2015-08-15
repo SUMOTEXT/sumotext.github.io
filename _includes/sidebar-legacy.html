@@ -1,6 +1,6 @@
  <ul>
 	<a href="/"><li>Getting Started(legtho)</li></a>
-	{% for pag in site.categories.docs %}
+	{% for pag in site.categories.legdocs %}
 		<a href="{{pag.url}}">
     		<li {% if page.url == pag.url %} class="active"{% endif %} >
     			{{pag.title}}
