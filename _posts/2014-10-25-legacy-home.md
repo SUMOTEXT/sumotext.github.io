@@ -1,0 +1,15 @@
+---
+layout: defaultLegacy
+title:  "Legacy API Guide"
+permalink: /legacy/
+---
+
+<h1>SUMOTEXT API Guide</h1>
+<p>Use the SUMOTEXT HTTPS API to integrate SUMOTEXT events with your service.</p>
+
+<h2>Finding your credentials</h2>
+<p>Contact Sumotext at 1-800-480-1248 to set up your account. Customers are provided a dedicated support matrix for their account. Our U.S. based help desk is available weekdays from 8:00 AM to 6:30 PM CST.
+For after hours emergency support 24/7/365, please call 501-313-3318.</p>
+
+<h2>Security</h2>
+<p>We use a combination of HTTPS, IP Address white-listing, and dedicated shortcode/keyword. Please contact your account manager for assistance with initial configuration.</p>
